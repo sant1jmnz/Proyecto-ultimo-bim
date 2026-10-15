@@ -1,0 +1,9 @@
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/Trabajo_Integrador_Ramirez_SanMartin_JImenez.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/edit_cache.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/rebuild_cache.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/list_install_components.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/local.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/strip.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/Trabajo_Integrador_Ramirez_SanMartin_JImenez_autogen_timestamp_deps.dir
+/home/tt_berea/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/Trabajo_Integrador_Ramirez_SanMartin_JImenez_autogen.dir
