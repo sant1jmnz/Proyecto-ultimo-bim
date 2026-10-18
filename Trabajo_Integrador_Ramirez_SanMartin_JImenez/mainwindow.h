@@ -18,10 +18,15 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
+
 private slots:
-    void on_lineEdit_textEdited(const QString &arg1);
+    void on_actionRegistrar_venta_triggered();
 
     void on_lineEdit_textChanged(const QString &arg1);
+
+    void on_tableView_activated(const QModelIndex &index);
+
+    void on_tableView_doubleClicked(const QModelIndex &index);
 
 private:
     Ui::MainWindow *ui;
