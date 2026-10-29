@@ -24,7 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         formulario.h formulario.cpp formulario.ui
-        venta.h venta.cpp venta.ui
+        venta.h venta.cpp venta.ui imagenes.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Trabajo_Integrador_Ramirez_SanMartin_JImenez APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

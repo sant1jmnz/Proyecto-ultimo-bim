@@ -1,3 +1,0 @@
-C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\Trabajo_Integrador_Ramirez_SanMartin_JImenez.dir/objects.a
-C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\Trabajo_Integrador_Ramirez_SanMartin_JImenez.dir/objects.a @CMakeFiles\Trabajo_Integrador_Ramirez_SanMartin_JImenez.dir\objects1.rsp
-C:\Qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\Trabajo_Integrador_Ramirez_SanMartin_JImenez.dir/objects.a -Wl,--no-whole-archive -o Trabajo_Integrador_Ramirez_SanMartin_JImenez.exe -Wl,--out-implib,libTrabajo_Integrador_Ramirez_SanMartin_JImenez.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Trabajo_Integrador_Ramirez_SanMartin_JImenez.dir\linkLibs.rsp

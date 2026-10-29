@@ -1,4 +1,0 @@
-set(__QT_DEPLOY_TARGETS "Trabajo_Integrador_Ramirez_SanMartin_JImenez")
-set(__QT_DEPLOY_TARGET_Trabajo_Integrador_Ramirez_SanMartin_JImenez_FILE C:/Users/Usuario/Proyecto-ultimo-bim/Trabajo_Integrador_Ramirez_SanMartin_JImenez/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/Trabajo_Integrador_Ramirez_SanMartin_JImenez.exe)
-set(__QT_DEPLOY_TARGET_Trabajo_Integrador_Ramirez_SanMartin_JImenez_TYPE EXECUTABLE)
-set(__QT_DEPLOY_TARGET_Trabajo_Integrador_Ramirez_SanMartin_JImenez_RUNTIME_DLLS C:/Qt/6.12.0/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.12.0/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.12.0/mingw_64/bin/Qt6Core.dll)
