@@ -52,6 +52,32 @@
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnNuevo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>505</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nuevo producto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEditar">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>505</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

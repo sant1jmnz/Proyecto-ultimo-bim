@@ -2,98 +2,85 @@
 <ui version="4.0">
  <class>Formulario</class>
  <widget class="QDialog" name="Formulario">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>622</width>
-    <height>443</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>Dialog</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">background: black;
-</string>
-  </property>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>90</y>
-     <width>331</width>
-     <height>271</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>GroupBox</string>
-   </property>
-   <widget class="QRadioButton" name="radioButton">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>150</y>
-      <width>110</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Nacional</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>180</y>
-      <width>110</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Importado</string>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="checkBox">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>230</y>
-      <width>91</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Aplica IVA</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>86</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Alimentos</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Limpieza</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Bazar</string>
-     </property>
-    </item>
-   </widget>
-  </widget>
+<property name="geometry"><rect><x>0</x><y>0</y><width>622</width><height>360</height></rect></property>
+<property name="windowTitle"><string>Producto</string></property>
+<property name="styleSheet"><string notr="true">QDialog, QGroupBox, QLabel, QCheckBox, QRadioButton { background: black; color: white; }
+QLineEdit, QComboBox { background: #222; color: white; border: 1px solid gray; }
+QPushButton { background: #333; color: white; padding: 4px; }
+</string></property>
+<widget class="QGroupBox" name="gbDatos">
+<property name="geometry"><rect><x>20</x><y>20</y><width>290</width><height>250</height></rect></property>
+<property name="title"><string>Datos del producto</string></property>
+<widget class="QLabel" name="lblId">
+<property name="geometry"><rect><x>15</x><y>40</y><width>80</width><height>26</height></rect></property>
+<property name="text"><string>ID:</string></property>
+</widget>
+<widget class="QLineEdit" name="leId">
+<property name="geometry"><rect><x>110</x><y>40</y><width>160</width><height>26</height></rect></property>
+</widget>
+<widget class="QLabel" name="lblNombre">
+<property name="geometry"><rect><x>15</x><y>90</y><width>80</width><height>26</height></rect></property>
+<property name="text"><string>Nombre:</string></property>
+</widget>
+<widget class="QLineEdit" name="leNombre">
+<property name="geometry"><rect><x>110</x><y>90</y><width>160</width><height>26</height></rect></property>
+</widget>
+<widget class="QLabel" name="lblPrecio">
+<property name="geometry"><rect><x>15</x><y>140</y><width>80</width><height>26</height></rect></property>
+<property name="text"><string>Precio:</string></property>
+</widget>
+<widget class="QLineEdit" name="lePrecio">
+<property name="geometry"><rect><x>110</x><y>140</y><width>160</width><height>26</height></rect></property>
+</widget>
+<widget class="QLabel" name="lblAyudaPrecio">
+<property name="geometry"><rect><x>110</x><y>167</y><width>170</width><height>18</height></rect></property>
+<property name="styleSheet"><string notr="true">color: #777777; font-size: 9px;</string></property>
+<property name="text"><string>Decimales con punto (.), no con coma (,)</string></property>
+</widget>
+<widget class="QLabel" name="lblStock">
+<property name="geometry"><rect><x>15</x><y>190</y><width>80</width><height>26</height></rect></property>
+<property name="text"><string>Stock:</string></property>
+</widget>
+<widget class="QLineEdit" name="leStock">
+<property name="geometry"><rect><x>110</x><y>190</y><width>160</width><height>26</height></rect></property>
+</widget>
+</widget>
+<widget class="QGroupBox" name="gbOpciones">
+<property name="geometry"><rect><x>330</x><y>20</y><width>270</width><height>250</height></rect></property>
+<property name="title"><string>Clasificación</string></property>
+<widget class="QLabel" name="lblCategoria">
+<property name="geometry"><rect><x>15</x><y>40</y><width>80</width><height>26</height></rect></property>
+<property name="text"><string>Categoría:</string></property>
+</widget>
+<widget class="QComboBox" name="cbCategoria">
+<property name="geometry"><rect><x>100</x><y>40</y><width>150</width><height>26</height></rect></property>
+<item><property name="text"><string>Alimentos</string></property></item><item><property name="text"><string>Limpieza</string></property></item><item><property name="text"><string>Bazar</string></property></item></widget>
+<widget class="QCheckBox" name="chkIva">
+<property name="geometry"><rect><x>15</x><y>100</y><width>200</width><height>26</height></rect></property>
+<property name="text"><string>Aplica IVA</string></property>
+</widget>
+<widget class="QLabel" name="lblOrigen">
+<property name="geometry"><rect><x>15</x><y>150</y><width>80</width><height>26</height></rect></property>
+<property name="text"><string>Origen:</string></property>
+</widget>
+<widget class="QRadioButton" name="rbNacional">
+<property name="geometry"><rect><x>100</x><y>150</y><width>150</width><height>26</height></rect></property>
+<property name="text"><string>Nacional</string></property>
+<property name="checked"><bool>true</bool></property>
+</widget>
+<widget class="QRadioButton" name="rbImportado">
+<property name="geometry"><rect><x>100</x><y>185</y><width>150</width><height>26</height></rect></property>
+<property name="text"><string>Importado</string></property>
+</widget>
+</widget>
+<widget class="QPushButton" name="btnGuardar">
+<property name="geometry"><rect><x>330</x><y>300</y><width>130</width><height>34</height></rect></property>
+<property name="text"><string>Guardar</string></property>
+</widget>
+<widget class="QPushButton" name="btnCancelar">
+<property name="geometry"><rect><x>470</x><y>300</y><width>130</width><height>34</height></rect></property>
+<property name="text"><string>Cancelar</string></property>
+</widget>
  </widget>
  <resources/>
  <connections/>
