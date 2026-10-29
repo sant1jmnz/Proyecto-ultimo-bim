@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QSortFilterProxyModel>
+#include <QStandardItemModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,13 +19,18 @@ public:
     ~MainWindow() override;
 
 private slots:
-    void on_lineEdit_textEdited(const QString &arg1);
-
-    void on_lineEdit_textChanged(const QString &arg1);
+    void on_btnNuevo_clicked();
+    void on_btnEditar_clicked();
+    void on_btnRegistrar_clicked();
+    void agregarProductoTabla(QString id, QString nombre, QString categoria,
+                              double precio, int stock, bool aplicaIva, bool importado);
+    void actualizarProductoTabla(QString id, QString nombre, QString categoria,
+                                 double precio, int stock, bool aplicaIva, bool importado);
 
 private:
+    // Columnas del modelo: ID, Nombre, Categoria, Precio, Stock, IVA, Origen
     Ui::MainWindow *ui;
-
-    QSortFilterProxyModel *filtroInventario;
+    QStandardItemModel *modeloInventario;
+    int filaEditando = -1; // fila del modelo que se esta editando
 };
 #endif // MAINWINDOW_H
