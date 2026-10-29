@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "formulario.h"
+#include "venta.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -13,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent)
     modeloInventario->setHorizontalHeaderLabels({"ID", "Nombre", "Categoría", "Precio", "Stock", "IVA", "Origen"});
 
     ui->tableView->setModel(modeloInventario);
+
+    connect(ui->tableView, &QTableView::doubleClicked, this, &MainWindow::on_btnRegistrar_clicked);
 }
 
 MainWindow::~MainWindow()
@@ -80,4 +83,26 @@ void MainWindow::actualizarProductoTabla(QString id, QString nombre, QString cat
     modeloInventario->item(filaEditando, 5)->setText(aplicaIva ? "Sí" : "No");
     modeloInventario->item(filaEditando, 6)->setText(importado ? "Importado" : "Nacional");
     filaEditando = -1;
+}
+
+void MainWindow::on_btnRegistrar_clicked()
+{
+    int fila = ui->tableView->currentIndex().row();
+    if (fila == -1) {
+        QMessageBox::warning(this, "Error", "No seleccionó ningún producto.");
+        return;
+    }
+
+    Venta ventanaVenta(this);
+    ventanaVenta.cargarDatos(modeloInventario->item(fila, 1)->text(), modeloInventario->item(fila, 4)->text());
+
+    if (ventanaVenta.exec() == QDialog::Accepted) {
+        int stockActual = modeloInventario->item(fila, 4)->text().toInt();
+        int nuevoStock = stockActual - ventanaVenta.cantidad();
+        modeloInventario->item(fila, 4)->setText(QString::number(nuevoStock));
+
+        if (nuevoStock == 0) {
+            QMessageBox::information(this, "Sin stock", "El producto se quedó sin stock.");
+        }
+    }
 }

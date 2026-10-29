@@ -21,6 +21,7 @@ public:
 private slots:
     void on_btnNuevo_clicked();
     void on_btnEditar_clicked();
+    void on_btnRegistrar_clicked();
     void agregarProductoTabla(QString id, QString nombre, QString categoria,
                               double precio, int stock, bool aplicaIva, bool importado);
     void actualizarProductoTabla(QString id, QString nombre, QString categoria,

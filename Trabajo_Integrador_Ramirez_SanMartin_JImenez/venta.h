@@ -13,6 +13,7 @@ class Venta : public QDialog
 
 public:
     void cargarDatos(QString nombreProducto, QString cantidadStock);
+    int cantidad();
     explicit Venta(QWidget *parent = nullptr);
     ~Venta();
 

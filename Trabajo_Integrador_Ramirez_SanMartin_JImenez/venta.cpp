@@ -1,6 +1,7 @@
 #include "venta.h"
 #include "ui_venta.h"
 #include <QMessageBox>
+#include <QPixmap>
 
 Venta::Venta(QWidget *parent)
     : QDialog(parent)
@@ -42,4 +43,17 @@ void Venta::cargarDatos(QString nombreProducto, QString cantidadStock)
 {
     ui->lblProducto->setText(nombreProducto);
     ui->lblStock->setText(cantidadStock);
+    ui->spinCantidad->setRange(1, 999999);
+
+    QPixmap foto(":/imagenes/imagenes/" + nombreProducto + ".jpg");
+    if (foto.isNull()) {
+        foto.load(":/imagenes/imagenes/default.png");
+    }
+    foto = foto.scaled(ui->lblImagen->size(), Qt::KeepAspectRatio);
+    ui->lblImagen->setPixmap(foto);
+}
+
+int Venta::cantidad()
+{
+    return ui->spinCantidad->value();
 }

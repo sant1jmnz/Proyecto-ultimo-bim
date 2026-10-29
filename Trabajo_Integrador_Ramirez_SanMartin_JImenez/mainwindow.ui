@@ -65,6 +65,19 @@
      <string>Nuevo producto</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnRegistrar">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>505</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Registrar venta</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="btnEditar">
     <property name="geometry">
      <rect>
