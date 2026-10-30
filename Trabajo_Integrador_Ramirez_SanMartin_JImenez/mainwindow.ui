@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black;</string>
+     <string notr="true">background-color: black; color: white;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
@@ -40,7 +40,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black;</string>
+     <string notr="true">background-color: black; color: white;</string>
     </property>
     <property name="dragEnabled">
      <bool>false</bool>

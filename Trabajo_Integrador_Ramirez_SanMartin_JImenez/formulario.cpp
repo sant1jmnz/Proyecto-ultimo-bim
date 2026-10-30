@@ -3,6 +3,7 @@
 #include <QMessageBox>
 #include <QDoubleValidator>
 #include <QIntValidator>
+#include <QLocale>
 
 Formulario::Formulario(QWidget *parent)
     : QDialog(parent)
@@ -10,7 +11,10 @@ Formulario::Formulario(QWidget *parent)
 {
     ui->setupUi(this);
 
-    ui->lePrecio->setValidator(new QDoubleValidator(0, 999999, 2, this));
+    auto *validadorPrecio = new QDoubleValidator(0, 999999, 2, this);
+    validadorPrecio->setNotation(QDoubleValidator::StandardNotation);
+    validadorPrecio->setLocale(QLocale::c());
+    ui->lePrecio->setValidator(validadorPrecio);
     ui->leStock->setValidator(new QIntValidator(0, 9999, this));
 }
 
