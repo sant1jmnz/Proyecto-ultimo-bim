@@ -68,7 +68,7 @@
    <widget class="QPushButton" name="btnRegistrar">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>160</x>
       <y>505</y>
       <width>120</width>
       <height>32</height>
@@ -81,7 +81,7 @@
    <widget class="QPushButton" name="btnEditar">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>290</x>
       <y>505</y>
       <width>120</width>
       <height>32</height>
@@ -89,6 +89,19 @@
     </property>
     <property name="text">
      <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEliminar">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>505</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar</string>
     </property>
    </widget>
   </widget>
